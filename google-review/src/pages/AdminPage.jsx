@@ -22,7 +22,7 @@ function AdminPage() {
   const fetchReviews = useCallback(async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/reviews"
+        "https://google-review-app-wi5e.onrender.com/api/reviews"
       );
 
       setReviews(res.data);
@@ -58,7 +58,7 @@ function AdminPage() {
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/reviews/${id}`
+        `https://google-review-app-wi5e.onrender.com/api/reviews/${id}`
       );
 
       fetchReviews();
