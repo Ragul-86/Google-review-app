@@ -52,7 +52,7 @@ function ReviewPage() {
 
       // Save Review
       await axios.post(
-        "http://localhost:5000/api/reviews",
+        "https://google-review-app-wi5e.onrender.com/api/reviews",
         {
           rating,
           feedback,
@@ -66,7 +66,7 @@ function ReviewPage() {
         try {
           const aiResponse =
             await axios.post(
-              "http://localhost:5000/api/ai/generate",
+              "https://google-review-app-wi5e.onrender.com/api/ai/generate",
               {
                 feedback,
               }
